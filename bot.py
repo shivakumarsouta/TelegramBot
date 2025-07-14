@@ -9,7 +9,7 @@ BOT_TOKEN = os.environ.get('BOT_TOKEN')
 bot = telebot.TeleBot(BOT_TOKEN)
 
 
-@bot.message_handler(commands=['start', 'hello'])
+@bot.message_handler(commands=['start', 'hello', 'hi'])
 def send_welcome(message):
     bot.reply_to(message, "Howdy, how are you doing?")
 
@@ -41,6 +41,9 @@ def fetch_horoscope(message, sign):
 @bot.message_handler(func=lambda msg: True)
 def echo_all(message):
     bot.reply_to(message, message.text)
-
-
-bot.infinity_polling()
+    
+while True:
+    try:
+        bot.infinity_polling()
+    except Exception as e:
+        print(f"Bot crashed. Restarting... Error: {e}")
