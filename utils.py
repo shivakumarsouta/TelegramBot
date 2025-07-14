@@ -13,4 +13,10 @@ def get_daily_horoscope(sign: str, day: str) -> dict:
     params = {"sign": sign, "day": day}
     response = requests.get(url, params)
 
+    if response.status_code == 200:
+        horoscope = response.json()
+        print(horoscope)
+    else:
+        print(f"API returned status {response.status_code}: {response.text}")
+
     return response.json()
