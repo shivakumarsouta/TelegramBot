@@ -13,7 +13,9 @@ A simple, user-friendly Telegram bot that provides daily, tomorrow's, or yesterd
 - Simple conversational flow
 - Automatic error handling with restart
 
-## 🚀 Getting Started
+---
+
+# 🚀 Getting Started
 
 ### 1️⃣ Clone the Repository
 
@@ -44,9 +46,9 @@ Make sure `.env` is included in `.gitignore` to keep your token secure.
 python bot.py
 ```
 
-The bot will automatically restart if it crashes.
+---
 
-## 🛠️ Project Structure
+# 🛠️ Project Structure
 
 ```
 ├── bot.py                # Main bot script
@@ -56,21 +58,25 @@ The bot will automatically restart if it crashes.
 ├── requirements.txt      # Python dependencies
 └── README.md             # Project README
 ```
+---
 
-## 📋 Commands
+# 📋 Commands
 
 - `/start` or `/hello` or `/hi` – Greets the user.
 - `/horoscope` – Starts horoscope flow:
   1. User chooses zodiac sign.
   2. User chooses date (Today, Tomorrow, Yesterday, or YYYY-MM-DD).
 
-## 📎 Dependencies
+---
+# 📎 Dependencies
 
 - Python 3.8+
 - `pyTelegramBotAPI`
 - `requests`
 
-## ✅ Example Usage
+---
+
+# ✅ Example Usage
 
 - User sends `/horoscope`.
 - Bot asks for zodiac sign.
@@ -79,14 +85,24 @@ The bot will automatically restart if it crashes.
 - User replies with `"TODAY"`.
 - Bot sends back the horoscope.
 
-## ⚠️ Notes
+---
+
+# ⚠️ Notes
 
 - Make sure your Telegram bot token is valid.
 - API endpoint: [Horoscope App API](https://horoscope-app-api.vercel.app/)
 - Be aware of rate limits from the API provider.
 
-## 📄 License
+---
+
+# 📄 License
 
 This project is open-source under the [MIT License](LICENSE).
+
+---
+
+# 🙏 Credits
+
+FreeCodeCamp
 
 ---
