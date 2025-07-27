@@ -20,7 +20,7 @@ A simple, user-friendly Telegram bot that provides daily, tomorrow's, or yesterd
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone https://github.com/shivkumars005/TelegramBot.git
+git clone https://github.com/shivakumarsouta/TelegramBot.git
 cd TelegramBot
 ```
 
